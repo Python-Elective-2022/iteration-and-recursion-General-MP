@@ -27,11 +27,16 @@ recursive_power(6, 9) : 10077696
 
 iterative_power(420, 1) : 420
 recursive_power(420, 1) : 420
+
+iterative_power(10000000, 0) : 1
+recursive_power(10000000, 0) : 1
 """
 
 def iterativePower(base, exp):
     """
-
+    base: int or float
+    exp: int >= 0
+    returns: int or float, base ** exp
     """
     result = base
     if exp == 0:
@@ -44,7 +49,9 @@ def iterativePower(base, exp):
 
 def recursivePower(base, exp):
     """
-
+    base: int or float
+    exp: int >= 0
+    returns: int or float, base ** exp
     """
     if exp == 0:
         return 1
